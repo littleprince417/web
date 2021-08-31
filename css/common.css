@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* @import "main.css";
+@import "sub.css";
+최근 방식이므로 옛날 관공서에는 적용안됨 */
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, p, ul, dl, dt, dd, figure, th, td, fieldset, input { margin: 0; padding: 0; }
+table { border-collapse: collapse; }
+fieldset, img { border: 0;}
+li { list-style: none; }
+a { text-decoration: none; }
+hr { display: none;}
+small { text-transform: none; }
+address { font-style: normal; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트-segoeui */
+@font-face { font-family: segoeui;
+          src: url(../webfont/segoeui.ttf),
+               url(../webfont/segoeui.eot),
+               url(../webfont/segoeui.woff); }
+body { min-width: 1000px; font-family: 'Segoe UI', segoeui, sans-serif; }
+/* 헤더*/
+#header { width: 1000px; height: 187px; margin: 0 auto; position: relative;
+        }
+#header h1  { width: 249px; padding: 90px 0 0 50px; }
+#header h1 a { display: block; height: 50px;
+              text-indent: -9999px;
+              background: url(../images/logo.png) no-repeat;
+              }
+/* 멤버쉽 */
+#membership { position: absolute; top: 18px; right: 80px; }
+#membership ul li { float: left;  position: relative; }
+#membership ul li a { color: #333; font-size: 14px;}
+.goLogin { padding-right: 9px; }
+.goLogin::after { content: ""; border-right: 1px solid #bea082;
+                  position: absolute; top: 7px; right: 0;
+                  height: 11px;}
+.goJoin { padding-left: 9px; }
+.goJoin::before { content: ""; border-left: 1px solid #82a0be;
+                  position: absolute; top: 7px; left: 0;
+                  height: 11px;
+                   }
+/* gnb */
+#gnb { position: absolute; top:106px; right: 40px; }
+#gnb ul {  }
+#gnb ul li { float: left; margin-left: 10px; }
+#gnb ul li a { padding: 0 10px 10px;
+              text-transform: uppercase; color: #333; }
+#gnb ul li a:hover { border-bottom: 3px solid #00bff3; }
+
+/* footer-cogus */
+/* #footerWrap { border-top: 1px solid gray; margin-top: 55px; }
+#footer { width: 1000px; margin: 0 auto; padding: 40px 0;
+          background: url(../images/logoFooter.png) no-repeat;
+          overflow: hidden; }
+#footer .info { float: left; padding-left: 200px; }
+#footer .info small { display: block; }
+#footer .info address { font-size: 14px;}
+#footer .sns { float: right; }
+#footer .sns li { float: left; }
+#footer .sns .facebook a { display: block; width: 33px; height: 33px;
+                          background: url(../images/bgSns.png) left center no-repeat;
+                          text-indent: -9999px;}
+#footer .sns .twitter a { display: block; width: 33px; height: 33px;
+                          background: url(../images/bgSns.png) right center no-repeat;
+                          margin: 0 76px 0 20px;
+                          text-indent: -9999px; } */
+
+/* footer-강사*/
+#footerWrap { margin-top: 55px; border-top: 1px solid #000; }
+#footer { overflow: hidden; width: 720px; margin: 0 auto;
+          background: url(../images/logoFooter.png) no-repeat 55px 23px;
+          padding: 23px 76px 20px 204px; }
+#footer .info { float: left;}
+#footer .info small {}
+#footer .info address {}
+#footer .sns { height: 33px; float: right; }
+                    /*float 사용했으므로 부모에 높이지정 혹은 overflow 해야 높이인지가능*/
+#footer .sns li { width: 33px; height: 33px; float: left;
+                  margin-left: 17px;
+                  }
+#footer .sns li a { display: block; width: 33px; height: 33px;
+                    background: url(../images/bgSns.png);
+                   text-indent: -5000px;
+                   }
+#footer .sns .twitter a { background-position-x: right;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>펀웹 인사말</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+  </head>
+  <body>
+    <? include "header.html"; ?>
+    <!-- 서브시작 -->
+    <section id="contaner">
+      <header id="subHeader" class="subHeaderCompany"> <!--class한번더 지정- 배경이 다르기때문에-->
+        <h2>company</h2>
+      </header>
+      <div id="subWrap">
+        <nav id="snb"> <!--snb = sub nav bar-->
+          <h3>company <span class="hidden">서브메뉴</span></h3>
+          <ul>
+            <li><a href="#">welcome</a></li>
+            <li><a href="#">history</a></li>
+            <li><a href="#">newsroom</a></li>
+            <li><a href="#">public policy</a></li>
+          </ul>
+        </nav>
+        <article id="subContent">
+          <h3>Welcome</h3>
+          <div class="subContentCompany">
+            <figure>
+              <img src="https://via.placehold.com/196x226"> <!--alt 생략가능-->
+              <figcaption>Fun Web CEO Michael</figcaption>
+            </figure>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- 서브끝 -->
+    <? include "header.html"; ?>
+  </body>
+</html>

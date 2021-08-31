@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* 초기화 */
+/* figure  { margin: 0; padding: 0;} common1.css 초기화영역에서 추가함 */
+/* gnb */
+#header { height: 160px;}
+#header h1 { padding-top: 76px;}
+/* gnb */
+#gnb { top: 93px; }
+/* 서브 본문 */
+/* 헤드 */
+#container {}
+#subHeader { height: 300px;
+            background:  no-repeat center center / cover;
+            position: relative; }
+#subHeader h2 { color: #fff;  text-transform: uppercase; font-size: 70px;
+                text-shadow: 0px 2px 2px #000;
+                text-align: center; padding-top: 50px;
+                position: relative; }
+#subHeader::before { content:"";
+                    position: absolute; top: 0; left:0;
+                    width: 100%; height: 300px;
+                    background-color: rgba(0, 0, 0, 0.3); }
+/* subWrap */
+#subWrap { width: 1000px; margin: 30px auto 0;}
+#subWrap::after { content:""; display: block; clear: both; }
+/* snb */
+#snb { width: 250px; float: left; text-transform: uppercase; }
+#snb h3 { height: 95px;  margin-bottom: 15px;
+          text-align: center; font-weight: normal;
+          line-height: 95px; font-size: 30px;
+          background: #3c3c3c; color: #fff; }
+#snb li a { display: block; height: 50px;
+            border-bottom: 1px solid #b6b6c5;
+            line-height: 50px; text-indent: 22px;  /*padding-left 도 가능하지만 영역바뀜*/
+            color: #333;
+            background: url(../images/bulletSnb.png) no-repeat 229px center;}
+#snb li a:hover { background-image: url(../images/bulletSnbOver.png);
+                  border-bottom-color: #e77348;
+                  color: #e77348; }
+/* subContent */
+#subContent { width: 710px; float: right;}
+#subContent h3 { color: #ccc;
+                /* font-size: 40px;
+                font-weight: normal;
+                font-family: "Times New Roman", serif; */
+                font:  40px "Times New Roman", serif;
+              } /*font: style-weight-size-family/ style, weight 생략 시 기본인 normal 적용*/
+#subContent figure { float: right; margin: 0 0 15px 10px; text-align: center; }
+#subContent p { margin-bottom: 15px;}
+/* 서브페이지 개별 */
+/* company_welcome */
+#subHeader.subHeaderCompany { background-image: url(../images/subTitleCompany.jpg); }
+.subContentCompany { padding: 0 45px 0 20px; }
+/* customercenter_notice*/
+#snb .snbTitleCustomer { padding-top: 15px;
+                        box-sizing: border-box;
+                        line-height: 1.2em;}
+#subHeader.subHeaderCustomer { background-image: url(../images/subTitleCustomer.jpg); }
+#notice { width: 660px; }
+#notice thead { height: 30px; } /*영역을 구분하는 정도이므로 style은 셀들에게 적용해야함*/
+#notice thead th { height: 30px; font-weight: normal; color: #fff;
+                  text-transform: capitalize;
+                  background: linear-gradient(180deg, #6dbaf2 0%, #246fd2 100%);
+                 }
+#notice thead th.no { width: 56px; border-radius: 5px 0 0 5px; }
+#notice thead th.title { width: 376px; letter-spacing: 1em;}
+#notice thead th.write { width: 100px; }
+#notice thead th.date { width: 72px; }
+#notice thead th.read { width: 56px; border-radius: 0 5px 5px 0; }
+#notice tbody {}
+#notice tbody td { padding: 5px 0; text-align: center;
+                  border-bottom: 1px solid #ccc; }
+#notice tbody td.listTitle { text-align: left; }
+/* #notice tbody td:nth-child(2)  { text-align: left; } 클래스아닌 구조선택자로도 가능 */
+#notice tbody td div { width: 376px; /*셀 안에 div로 영역을 주는 이유는 table 블락요소가 먼저이기때문에 display: block 적용불가:*/
+                      white-space: nowrap;
+                      overflow: hidden;
+                      text-overflow: ellipsis; }
+/* 검색 */
+#noticeSearch { margin: 16px 45px 35px 0; text-align: right; }
+#noticeSearch input { border: 1px solid #333; border-radius: 10px; }
+#noticeSearch #searchBox { width: 220px; height: 20px; text-indent: 10px;
+                          background: #fefdeb;}
+#noticeSearch #searchBtn { width: 88px; height: 22px; /*button요소 특징: border를 포함한 크기(,submit, reset)*/
+                           background: linear-gradient(180deg, #6dbaf2 0%, #246fd2 100%); }
+/* #noticeSearch #searchBtn value { color: #fff; } ??? */
+/* 페이지 번호 */
+#page_control { text-align: center; margin-right: 45px;} /* 아니면 .subContentCompany { padding-right: 45px; } */
+#page_control a { margin: 0 13px; color:#333; }
