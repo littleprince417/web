@@ -24,21 +24,21 @@
 #subWrap { width: 1000px; margin: 30px auto 0;}
 #subWrap::after { content:""; display: block; clear: both; }
 /* snb */
-#snb { width: 250px; float: left; text-transform: uppercase; }
-#snb h3 { height: 95px;  margin-bottom: 15px;
-          text-align: center; font-weight: normal;
-          line-height: 95px; font-size: 30px;
-          background: #3c3c3c; color: #fff; }
-#snb li a { display: block; height: 50px;
-            border-bottom: 1px solid #b6b6c5;
-            line-height: 50px; text-indent: 22px;  /*padding-left 도 가능하지만 영역바뀜*/
+#snb { width: 1000px; text-transform: uppercase; }
+#snb h3 { width: 20%; height: 90px; text-align: center; font-weight: normal;
+          line-height: 90px; font-size: 20px;
+          background: #3c3c3c; color: #fff;
+          float: left;}
+#snb li { float: left; width: 20%;}
+#snb li a { display: block; height: 90px; line-height: 90px;
+            text-indent: 22px;
             color: #333;
-            background: url(../images/bulletSnb.png) no-repeat 229px center;}
+            background: url(../images/bulletSnb.png) no-repeat center;}
 #snb li a:hover { background-image: url(../images/bulletSnbOver.png);
                   border-bottom-color: #e77348;
                   color: #e77348; }
 /* subContent */
-#subContent { width: 710px; float: right;}
+#subContent { width: 710px; }
 #subContent h3 { color: #ccc;
                 /* font-size: 40px;
                 font-weight: normal;
